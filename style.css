@@ -30,20 +30,16 @@ h1 {
   text-align: center;
 }
 
-/* Bus Image */
-.bus-image {
-  margin: 20px 0;
+/* Bus video */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  display: flex;
-  justify-content: center;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
-.bus-image img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 8px;
-}
-
 /* Expire Button */
 .expire-btn {
   background-color: #ff4d4d; /* softer red for accessibility */
