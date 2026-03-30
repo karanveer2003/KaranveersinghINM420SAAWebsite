@@ -1,76 +1,93 @@
-/* Basic Reset & Font */
+/* Reset & Basic Styles */
 body {
-  background-color: #8e3b78; /* purple background */
-  color: white;
-  font-family: Arial, sans-serif;
-  font-size: 1em; /* consistent font size */
   margin: 0;
   padding: 20px;
-  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #8e3b78; /* purple background */
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
 }
 
-/* Headings & Text */
+/* Title Style (matching font, size, weight, margin) */
 h1 {
+  font-family: Arial, sans-serif;
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 1.5em; /* same as image */
   margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
-/* Date, Time, Route Styles */
+/* Date & Time styles, matching size and margin */
 .date,
-.time,
+.time {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.2em; /* same size as in picture */
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* Route text style */
 .route {
-  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
   font-size: 1.2em;
   margin-top: 8px;
+  margin-bottom: 8px;
   text-align: center;
 }
 
-/* Bus video */
+/* Bus video styling (size matching image) */
 #bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  width: 350px; /* size similar to picture */
+  height: auto;
+  object-fit: fill;
+  border-radius: 10px;
+  margin-top: 10px;
 }
-/* Expire Button */
+
+/* Expire Button styling (matching size & style) */
 .expire-btn {
-  background-color: #ff4d4d; /* softer red for accessibility */
+  background-color: #ff4d4d;
   color: white;
   border: none;
   padding: 12px 24px;
   border-radius: 25px;
+  font-family: Arial, sans-serif;
   font-size: 1em;
   cursor: pointer;
   margin-top: 15px;
   width: 80%;
   max-width: 200px;
-  font-family: Arial, sans-serif;
   transition: background-color 0.3s;
 }
 .expire-btn:hover {
   background-color: #e04444;
 }
 
-/* Expiry & User Info */
+/* Expiry info styles, matching font size & margins */
 .expiry-info,
 .user-id,
 .expiry-time {
   margin-top: 10px;
+  font-family: Arial, sans-serif;
   font-weight: normal;
-  text-align: center;
   font-size: 1em;
+  text-align: center;
+}
+
+/* User ID style */
+#userId {
+  font-size: 1em;
+  margin-top: 10px;
 }
 
 /* Responsive adjustments */
-@media (max-width: 600px) {
+@media(max-width: 600px) {
   body {
     padding: 10px;
   }
@@ -82,11 +99,7 @@ h1 {
   .route {
     font-size: 1.1em;
   }
-  .expire-btn {
-    padding: 10px 20px;
-    font-size: 0.9em;
-  }
-  .bus-image img {
-    max-width: 100%;
+  #bg-video {
+    width: 250px; /* smaller size for small screens */
   }
 }
