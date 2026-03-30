@@ -6,9 +6,12 @@
     "start": "lite-server"
   },
   "author": "Karanveer",
-  "license": "private",
-  "private" : true,
+  "license": "UNLICENSED",
+  "private": true,
   "devDependencies": {
     "lite-server": "^2.6.1"
-  }
+  },
+  "main": "index.js",
+  "keywords": [],
+  "description": ""
 }
