@@ -1,4 +1,8 @@
 /* Reset & Basic Styles */
+@font-face {
+  font-family: 'Lovtony';
+  src: url('https://raw.githubusercontent.com/karanveer2003/KaranveersinghINM420SAAWebsite/213a74fd570f9563c0e2db353e3e11ed9171ee10/lovtony.sans.ttf') format('truetype');
+}
 body {
   margin: 0;
   padding: 20px;
@@ -14,18 +18,18 @@ body {
 h1 {
   font-family: Arial, sans-serif;
   font-weight: normal;
-  font-size: 1.5em; /* same as image */
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-size: 1.2em; /* same as image */
+  margin-top: 8px;
+  margin-bottom: 8px;
   text-align: center;
 }
 
 /* Date & Time styles, matching size and margin */
 .date,
 .time {
-  font-family: Arial, sans-serif;
+  font-family: 'Lovtony', sans-serif;
   font-weight: normal;
-  font-size: 1.2em; /* same size as in picture */
+  font-size: 2em; /* same size as in picture */
   margin-top: 8px;
   margin-bottom: 8px;
   text-align: center;
