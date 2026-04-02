@@ -3,6 +3,11 @@
   font-family: 'Lovtony';
   src: url('https://raw.githubusercontent.com/karanveer2003/KaranveersinghINM420SAAWebsite/213a74fd570f9563c0e2db353e3e11ed9171ee10/lovtony.sans.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'ArethaBold';
+  src: url('https://raw.githubusercontent.com/karanveer2003/KaranveersinghINM420SAAWebsite/8af52487eb12dfdd191c3c97215c9b46878bdb57/Aretha-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
 body {
   margin: 0;
   padding: 20px;
@@ -29,10 +34,12 @@ h1 {
 .time {
   font-family: 'Lovtony', sans-serif;
   font-weight: normal;
-  font-size: 2em; /* same size as in picture */
+  font-size: 1.9em; /* same size as in picture */
   margin-top: 8px;
   margin-bottom: 8px;
   text-align: center;
+  display: inline-block;
+  transform: scaleX(1.2);
 }
 
 /* Route text style */
@@ -50,7 +57,6 @@ h1 {
   width: 350px; /* size similar to picture */
   height: auto;
   object-fit: fill;
-  border-radius: 10px;
   margin-top: 10px;
 }
 
@@ -78,9 +84,9 @@ h1 {
 .user-id,
 .expiry-time {
   margin-top: 10px;
-  font-family: Arial, sans-serif;
+  font-family: 'ArethaBold', sans-serif;
   font-weight: normal;
-  font-size: 1em;
+  font-size: 1.3em;
   text-align: center;
 }
 
